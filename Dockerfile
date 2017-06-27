@@ -12,6 +12,8 @@ LABEL name="acme/webserver" \
       vendor="Acme Inc" \
       version="1.0" \
       release="1" \
+      summary="Acme Corp's Starter app" \
+      description="Starter app will do ....." \
       run='docker run -d -p 8080:80 --name=mysimple acme/simpleweb'
 
 # Update and install the application
