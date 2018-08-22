@@ -8,13 +8,23 @@ MAINTAINER <admin@acme.com>
 
 # BUILD COMMAND= docker build -t simpleweb . #
 ### Add Atomic/OpenShift Labels - https://github.com/projectatomic/ContainerApplicationGenericLabels#####
-LABEL name="acme/webserver" \
-      vendor="Acme Inc" \
-      version="1.0" \
-      release="1" \
-      summary="Acme Corp's Starter app" \
-      description="Starter app will do ....." \
-      run='docker run -d -p 8080:80 --name=mysimple acme/simpleweb'
+LABEL description="Red Hat OpenStack Platform 13.0 nuage-neutron-server"
+
+LABEL version-release=5.3.2
+
+LABEL summary="Nuage Neutron Plugin"
+
+LABEL io.k8s.display-name="Red Hat OpenStack Platform 13.0 nuage-neutron-server"
+
+LABEL com.redhat.component="openstack-nuage-neutron-docker"
+
+LABEL name="rhosp13/openstack-nuage-neutron-server"
+
+LABEL version=13
+
+LABEL release=5.3.2
+
+LABEL architecture="x86_64"
 
 # Update and install the application
 #RUN yum update -y
