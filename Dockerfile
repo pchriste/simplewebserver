@@ -26,6 +26,8 @@ LABEL release=5.3.2
 
 LABEL architecture="x86_64"
 
+LABEL vendor="Nokia Nuage"
+
 # Update and install the application
 #RUN yum update -y
 RUN yum install httpd -y
