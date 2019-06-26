@@ -3,6 +3,7 @@
 # Version 1
 
 # Pull the rhel image from the local repository
+#FROM centos:7
 FROM rhel7:latest
 MAINTAINER <admin@acme.com>
 
